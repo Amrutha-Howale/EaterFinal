@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrdersPage">
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="374dp"
+        android:layout_height="184dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/itemtype"
+        android:layout_width="140dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="150dp"
+        android:text="TextView"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+
+    <TextView
+        android:id="@+id/itemprice"
+        android:layout_width="122dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="85dp"
+        android:text="TextView"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/Createorder"
+        android:layout_width="311dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/register_button"
+        android:text="Create Order"
+        android:textColor="#F5FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ItemName"
+        android:layout_width="235dp"
+        android:layout_height="62dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/images"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/itemtype" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="Type:"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="78dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:text="Content:"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="166dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Price Per Serving:"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersby1" />
+
+    <TextView
+        android:id="@+id/ordersby1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="52dp"
+        android:text="Already Ordered By"
+        android:textColor="#8BC34A"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/orderedby2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="20sp"
+        android:textColor="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toEndOf="@+id/ordersby1"
+        app:layout_constraintTop_toBottomOf="@+id/content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

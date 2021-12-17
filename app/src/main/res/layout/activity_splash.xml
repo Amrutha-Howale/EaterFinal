@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Splash">
+
+    <TextView
+        android:id="@+id/Image"
+        android:layout_width="92dp"
+        android:layout_height="85dp"
+        android:background="@drawable/circle"
+        android:text="E"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="55dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.285" />
+
+    <TextView
+        android:id="@+id/Eater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eater.Org"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#90EE90"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Image"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="223dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="176dp"
+        android:text="We deliver food You enjoy it"
+        android:textAlignment="center"
+        android:textColor="	#D3D3D3"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Eater" />
+</androidx.constraintlayout.widget.ConstraintLayout>

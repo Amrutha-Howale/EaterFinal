@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmOrders">
+
+    <Button
+        android:id="@+id/placeorder"
+        android:layout_width="303dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttoncolor"
+        android:padding="1dp"
+        android:text="ConfirmOrder"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itempricee" />
+
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="273dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="116dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
+    <TextView
+        android:id="@+id/itempricee"
+        android:layout_width="243dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="56dp"
+        android:text="price 0$"
+        android:textColor="#ACDF87"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qty" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/buttoncolor"
+        android:padding="1dp"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+
+    <TextView
+        android:id="@+id/qty"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="76dp"
+        android:text="0"
+        android:textColor="#101210"
+        android:textSize="22sp"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+
+    <Button
+        android:id="@+id/reduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/buttoncolor"
+        android:padding="1dp"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/qty"
+        app:layout_constraintTop_toBottomOf="@+id/images" />
+
+    <Button
+        android:id="@+id/check"
+        android:layout_width="304dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttoncolor"
+        android:padding="1dp"
+        android:text="MyOrders"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeorder" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Items:"
+        android:textColor="#ACDF87"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/itempricee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toEndOf="@+id/add"
+        app:layout_constraintTop_toBottomOf="@+id/images"
+        app:layout_constraintVertical_bias="0.542" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Create Order"
+        android:textColor="#ACDF87"
+        android:textSize="23sp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
